@@ -14,16 +14,16 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits<{
-  (e: 'update-args', args: Args): void
-}>()
+// const emit = defineEmits<{
+//   (e: 'update-args', args: Args): void
+// }>()
 
-const test = () => {
-  emit('update-args', {
-    ...props.args,
-    w: props.args.w + 100,
-  })
-}
+// const test = () => {
+//   emit('update-args', {
+//     ...props.args,
+//     w: props.args.w + 100,
+//   })
+// }
 </script>
 
 <template>

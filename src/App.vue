@@ -42,7 +42,7 @@ const filters = ref<FilterVideoStream[]>([
       originalW: 0,
       originalH: 0,
     },
-    filter: async (args, cvs, ctx, track, proc, reader, frame) => {
+    filter: async (args, cvs, ctx, _track, _proc, _reader, _frame) => {
       // get current full frame
       const currentFrame = ctx.getImageData(0, 0, cvs.width, cvs.height)
       if (args.w === 0 && args.h === 0 && args.originalW === 0 && args.originalH === 0) {
